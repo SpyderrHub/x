@@ -1,0 +1,385 @@
+Roadmap of Or Browse
+
+App logos
+Private browsing icon
+SVG icons
+Home page only keep top sites section
+check box color
+change theme color
+toolbar ui
+increase search hint numbers
+Edit Menu (Remove Extenions|Sync and save data|Report broken site..|Add app to Home screen|save to collection|What's new|Help)
+Customize homepage (Remove All Except wallpapers and Opening screen)
+Remove view a list of tabs from tab
+
+
+change ui of private browing in tab counter {
+
+/home/user/StudioProjects/firefox/mobile/android/android-components/components/ui/tabcounter/src/main/res/layout/mozac_ui_tabcounter_layout.xml= 41 to 48
+
+
+
+}
+
+Add/Remove/Edit Search engine {
+
+/home/user/StudioProjects/firefox/mobile/android/android-components/components/feature/search/src/main/assets/searchplugins
+
+/home/user/StudioProjects/firefox/mobile/android/android-components/components/feature/search/src/main/assets/search/list.json
+
+}
+
+
+add affiliate link in topsites {
+
+/home/user/StudioProjects/firefox/mobile/android/android-components/components/feature/top-sites/src/main/java/mozilla/components/feature/top/sites/db/TopSiteDatabase.kt
+
+}
+
+Edit/Remove history from topsites {
+
+/home/user/StudioProjects/firefox/mobile/android/android-components/components/feature/top-sites/src/main/java/mozilla/components/feature/top/sites/DefaultTopSitesStorage.kt - 124 to 138
+
+
+once check = /home/user/StudioProjects/firefox/mobile/android/android-components/components/feature/top-sites/src/main/java/mozilla/components/feature/top/sites/ext/TopFrecentSiteInfo.kt
+
+
+*mobile/android/fenix/app/src/main/java/org/mozilla/fenix/home/topsites/TopSiteItemMenu.kt - 51 remove isFrecentsite
+
+
+}
+
+list of topsites_per_page {
+
+mobile/android/fenix/app/src/main/java/org/mozilla/fenix/home/topsites/TopSites.kt - 65, 66
+
+
+optional = mobile/android/fenix/app/src/main/java/org/mozilla/fenix/home/topsites/PagerIndicator.kt
+}
+
+
+
+Add direct affiliate link in topsite {
+
+mobile/android/fenix/app/src/main/java/org/mozilla/fenix/home/topsites/TopSitesConfigConstants.kt
+
+mobile/android/fenix/app/src/main/java/org/mozilla/fenix/home/topsites/TopSitesConfigCreator.kt
+
+}
+
+
+increate search suggestion limit {
+
+mobile/android/fenix/app/src/main/java/org/mozilla/fenix/search/awesomebar/AwesomeBarView.kt
+
+
+check once = mobile/android/android-components/components/feature/awesomebar/src/main/java/mozilla/components/feature/awesomebar/provider/TrendingSearchProvider.kt
+
+
+
+}
+
+
+
+
+Homepage menu items {
+
+
+mobile/android/fenix/app/src/main/java/org/mozilla/fenix/home/HomeMenu.kt - 210 to 222
+
+
+
+}
+
+
+Edit HomePage/Remove Recent tabs, history, stories {
+
+mobile/android/fenix/app/src/main/java/org/mozilla/fenix/home/ui/Homepage.kt - 476 to 481
+
+}
+
+
+
+
+
+Add multiplr themes {
+
+mobile/android/fenix/app/src/main/java/org/mozilla/fenix/theme/FirefoxTheme.kt
+
+
+}
+
+Change app icon {
+
+
+
+mobile/android/android-components/components/browser/icons/src/androidTest/java/mozilla/components/browser/icons/OnDeviceBrowserIconsTest.kt
+
+
+}
+
+
+
+
+Domain icons {
+
+
+mobile/android/android-components/components/browser/icons/src/main/assets/mozac.browser.icons/icons-top200.json
+
+}
+
+
+
+
+remove amazon sponsorship from topsite {
+
+mobile/android/fenix/app/src/main/java/org/mozilla/fenix/home/HomeFragment.kt
+
+}
+
+
+
+history list ui change {
+
+
+mobile/android/fenix/app/src/main/res/layout/history_list_item.xml - 34
+
+
+}
+
+change ui of tab list/tab tray {
+
+mobile/android/fenix/app/src/main/res/values/dimens.xml - 145, 173, 174
+
+backend = mobile/android/fenix/app/src/main/java/org/mozilla/fenix/tabstray/TabsTrayTabLayouts.kt
+
+
+check = mobile/android/fenix/app/src/main/java/org/mozilla/fenix/tabstray/TabsTray.kt
+
+
+check = mobile/android/fenix/app/src/main/java/org/mozilla/fenix/compose/tabstray/TabGridItem.kt
+
+}
+
+
+edit/remove menu from result page {
+
+mobile/android/fenix/app/src/main/java/org/mozilla/fenix/components/menu/compose/MainMenu.kt
+
+mobile/android/fenix/app/src/main/java/org/mozilla/fenix/components/menu/store/MenuAction.kt 
+
+check = mobile/android/fenix/app/src/main/java/org/mozilla/fenix/components/menu/compose/CustomTabMenu.kt
+
+check = mobile/android/fenix/app/src/main/java/org/mozilla/fenix/components/menu/compose/MoreSettingsSubmenu.kt
+
+}
+
+
+
+
+App icon {
+
+mobile/android/fenix/app/src/main/AndroidManifest.xml 60 to 63
+
+}
+
+
+
+
+General settings (Search|Tabs|Homepage|
+Homepage edit (Homepage|customize|Tabs)
+Passwords
+Autofill
+Accessibility
+Language
+Translations
+Privacy and security (Private browsing|Https-only mode|Enhanced tracking protection|site settings| notifications|data collection)
+Delete browsing data
+Delete browsing data on quit
+
+
+Advanced (set as default browser|open links in apps|external download manager|remote debugging via USB)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*******Settings {
+
+
+mobile/android/fenix/app/src/main/res/xml/preferences.xml - Remove 9 to 14
+
+
+to make invisible add  "app:isPreferenceVisible="false"" line
+}
+
+***Accessibility {
+
+mobile/android/fenix/app/src/main/res/xml/accessibility_preferences.xml - add margin
+
+}
+
+***Autofill {
+
+mobile/android/fenix/app/src/main/res/xml/autofill_preferences.xml - remove Sync cards across devices
+
+}
+
+***Customize {
+
+mobile/android/fenix/app/src/main/res/xml/customization_preferences.xml
+
+}
+
+
+***Homepage {
+
+mobile/android/fenix/app/src/main/res/xml/home_preferences.xml - Remove what to think
+
+}
+
+
+
+***Search {
+
+mobile/android/fenix/app/src/main/res/xml/search_settings_preferences.xml
+
+}
+
+
+***Default search engine {
+
+mobile/android/fenix/app/src/main/res/xml/default_search_engine_preferences.xml
+
+}
+
+***Tabs {
+
+mobile/android/fenix/app/src/main/res/xml/tabs_preferences.xml
+
+
+}
+
+
+***Enhanced Tracking Protection {
+
+mobile/android/fenix/app/src/main/res/xml/tracking_protection_preferences.xml
+
+}
+
+***Site settings {
+
+mobile/android/fenix/app/src/main/res/xml/site_permissions_preferences.xml
+
+}
+
+*** Delete browsing data on quit {
+
+mobile/android/fenix/app/src/main/res/xml/delete_browsing_data_quit_preferences.xml
+
+}
+
+
+
+Shortcuts (optional) {
+mobile/android/fenix/app/src/main/res/xml/shortcuts.xml
+
+}
+
+
+***errorpages {
+
+mobile/android/android-components/components/browser/errorpages/src/main/res/values/strings.xml
+
+
+}
+
+
+
+******Add multiple themes {
+
+
+****mobile/android/android-components/components/compose/base/src/main/java/mozilla/components/compose/base/theme/AcornColors.kt
+
+
+aur merko naya theme add karna hei toh pahle yaha uss theme ka naam likho
+
+val blueColorPalette = AcornColors {.....}
+
+
+
+****gecko-dev/mobile/android/fenix/app/src/main/java/org/mozilla/fenix/theme/FirefoxTheme.kt
+
+abb uss color theme ko yaha import karo aur settings me list karo
+
+}
+
+
+
+
+
+change Switch & Radio button color {
+
+****mobile/android/android-components/components/compose/base/src/main/java/mozilla/components/compose/base/theme/AcornColors.kt
+
+agar main ek theme bana rah hu toh usme thoda colors change karunga, aur mujhe switch ka color ya phir radio button ka color change karna hei toh, mai pahle theme dekhunga ki kis theme me mere color change karna hei uss theme ko choose karke, usme radio button ke lye (formSelected, formDefault, formDisabled) rahega aur switch keliye (formOn, forOff) rahega. abb tu chahe toh color change kar sakta hei, aur naya color code add karke replace bhi kar sakta hei
+
+
+*****mobile/android/android-components/components/ui/colors/src/main/res/values/photon_colors.xml
+agar terko naya color add karna hei toh idhar kudka ek color ka naam de aur color code add kar
+
+ex. <color name="abhi20">#000000</color>
+
+mobile/android/android-components/components/ui/colors/src/main/java/mozilla/components/ui/colors/PhotonColors.kt
+
+abb jaise upar color add kiya same usi tarah idhar bhi color add karo, yaha color ka specific kaan hota hei, aur yaad rakha ya par color code ka pahle "0x" likhna hei aur uske baad same upar maine "000000" liya hu toh neeche bhi "000000" lunga jaise example
+
+Object PhotnColors {
+     val abbhi20 = Color(0x000000)
+}
+
+}
+
+
+
+
+
+add autocomplete domains {
+
+mobile/android/android-components/components/browser/domains/src/main/assets/domains/fr
+}
+
+
+
+
+to support all platform follow tor project {
+
+https://gitlab.torproject.org/tpo/applications/tor-browser
+
+.mozconfig-android-all
+.mozconfig-android-aarch64
+.mozconfig-android-armv7
+.mozconfig-android-x86
+.mozconfig-android-x86_64
+.mozconfig-linux-aarch64
+.mozconfig-linux-aarch64-dev
+.mozconfig-linux-arm
+.mozconfig-linux-i686
+.mozconfig-linux-x86_64
+.mozconfig-linux-x86_64-dev
+.mozconfig-linux-x86_64-asan
+.mozconfig-windows-x86_64
+.mozconfig-windows-i686
+
+
+
+}
