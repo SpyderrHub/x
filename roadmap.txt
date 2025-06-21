@@ -36,7 +36,7 @@ add affiliate link in topsites {
 
 }
 
-Edit/Remove history from topsites {
+👍 Edit/Remove history from topsites {
 
 /home/user/StudioProjects/firefox/mobile/android/android-components/components/feature/top-sites/src/main/java/mozilla/components/feature/top/sites/DefaultTopSitesStorage.kt - 124 to 138
 
@@ -49,7 +49,7 @@ once check = /home/user/StudioProjects/firefox/mobile/android/android-components
 
 }
 
-list of topsites_per_page {
+👍 list of topsites_per_page {
 
 mobile/android/fenix/app/src/main/java/org/mozilla/fenix/home/topsites/TopSites.kt - 65, 66
 
@@ -68,7 +68,7 @@ mobile/android/fenix/app/src/main/java/org/mozilla/fenix/home/topsites/TopSitesC
 }
 
 
-increate search suggestion limit {
+👍 increate search suggestion limit {
 
 mobile/android/fenix/app/src/main/java/org/mozilla/fenix/search/awesomebar/AwesomeBarView.kt
 
@@ -82,7 +82,7 @@ check once = mobile/android/android-components/components/feature/awesomebar/src
 
 
 
-Homepage menu items {
+👍 Homepage menu items {
 
 
 mobile/android/fenix/app/src/main/java/org/mozilla/fenix/home/HomeMenu.kt - 210 to 222
@@ -102,7 +102,7 @@ mobile/android/fenix/app/src/main/java/org/mozilla/fenix/home/ui/Homepage.kt - 4
 
 
 
-Add multiplr themes {
+Add multiple themes {
 
 mobile/android/fenix/app/src/main/java/org/mozilla/fenix/theme/FirefoxTheme.kt
 
@@ -139,7 +139,7 @@ mobile/android/fenix/app/src/main/java/org/mozilla/fenix/home/HomeFragment.kt
 
 
 
-history list ui change {
+👍 history list ui change {
 
 
 mobile/android/fenix/app/src/main/res/layout/history_list_item.xml - 34
@@ -228,7 +228,7 @@ mobile/android/fenix/app/src/main/res/xml/accessibility_preferences.xml - add ma
 
 }
 
-***Autofill {
+👍  ***Autofill {
 
 mobile/android/fenix/app/src/main/res/xml/autofill_preferences.xml - remove Sync cards across devices
 
@@ -353,7 +353,7 @@ Object PhotnColors {
 
 
 
-add autocomplete domains {
+👍 add autocomplete domains {
 
 mobile/android/android-components/components/browser/domains/src/main/assets/domains/fr
 }
