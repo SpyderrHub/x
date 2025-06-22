@@ -183,7 +183,9 @@ mobile/android/fenix/app/src/main/AndroidManifest.xml 60 to 63
 
 }
 
-
+ 👍 version {
+mobile/amdroid/fenix/app/build.gradle
+}
 
 
 General settings (Search|Tabs|Homepage|
