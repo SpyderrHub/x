@@ -94,7 +94,9 @@ mobile/android/fenix/app/src/main/java/org/mozilla/fenix/home/HomeMenu.kt - 210 
 
 Edit HomePage/Remove Recent tabs, history, stories {
 
-mobile/android/fenix/app/src/main/java/org/mozilla/fenix/home/ui/Homepage.kt - 476 to 481
+/home/user/StudioProjects/firefox/mobile/android/fenix/app/src/main/java/org/mozilla/fenix/home/HomeFragment.kt
+
+not working = mobile/android/fenix/app/src/main/java/org/mozilla/fenix/home/ui/Homepage.kt - 476 to 481
 
 }
 
