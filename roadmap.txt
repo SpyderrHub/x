@@ -179,6 +179,15 @@ check = mobile/android/fenix/app/src/main/java/org/mozilla/fenix/components/menu
 
 
 
+toolbar search engine select {
+
+mobile/android/fenix/app/src/main/java/org/mozilla/fenix/search/SearchFragmentStore.kt - history|tab|settings
+
+}
+
+
+
+
 App icon {
 
 mobile/android/fenix/app/src/main/AndroidManifest.xml 60 to 63
